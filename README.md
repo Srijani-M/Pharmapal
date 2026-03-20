@@ -56,50 +56,77 @@ Pharmapal/
 ├── prescription_storage/  # Folder for uploaded documents
 └── logs/                  # System activity logs
 ```
-Quick Start
-1. Clone the Repository
-Bash
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+```bash
 git clone [https://github.com/Srijani-M/PharmaPal.git](https://github.com/Srijani-M/PharmaPal.git)
 cd PharmaPal
-2. Create a Virtual Environment
-Bash
-# Windows
+```
+
+### 2. Create a Virtual Environment
+
+**Windows:**
+```bash
 python -m venv venv
 venv\Scripts\activate
-
-# Mac/Linux
+```
+**Mac/Linux:**
+```bash
+python -m venv venv
 source venv/bin/activate
-3. Install Dependencies
-Bash
-pip install -r requirements.txt
-4. Set Up Environment Variables
-Create a .env file in the root directory and add your credentials:
+```
 
-Code snippet
+### 3. Install Dependencies
+
+**Bash:**
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set Up Environment Variables
+
+**Config:**
+Create a `.env` file in the root directory and add your credentials:
+```env
 GOOGLE_API_KEY=your_gemini_api_key_here
 SENDER_EMAIL=your_email@gmail.com
 SENDER_PASSWORD=your_app_password_here
-5. Run the Application
-Bash
+```
+
+### 5. Run the Application
+
+**Bash:**
+```bash
 streamlit run app.py
+```
 Note: The application will be available at http://localhost:8501
 
-How To Use
-Register/Login: Create a secure account to protect your medical data.
+---
 
-Upload Prescriptions: Digitally store medicine details and RX files.
+## How To Use
 
-Set Reminders: Choose a medicine and time to receive automated email alerts.
+* **Register/Login:** Create a secure account to protect your medical data.
+* **Upload Prescriptions:** Digitally store medicine details and RX files.
+* **Set Reminders:** Choose a medicine and time to receive automated email alerts.
+* **AI Assistant:** Consult the Gemini-powered chat for pharmaceutical info.
 
-AI Assistant: Consult the Gemini-powered chat for pharmaceutical info.
+---
 
-Contributing
+## Contributing
+
+**Join Us:**
 Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
-License & Disclaimer
-License: Distributed under the MIT License.
+---
 
-Disclaimer: PharmaPal provides informational content only and is not a substitute for professional medical advice.
+## License & Disclaimer
 
-Developed by Srijani M
+* **License:** Distributed under the **MIT License**.
+* **Disclaimer:** PharmaPal provides informational content only and is **not** a substitute for professional medical advice, diagnosis, or treatment.
 
+---
+
+*Developed by **[Srijani M](https://github.com/Srijani-M)***

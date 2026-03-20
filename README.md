@@ -56,3 +56,9 @@ Pharmapal/
 ├── prescription_storage/  # Folder for uploaded documents
 └── logs/                  # System activity logs
 
+## Quick Start
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Srijani-M/PharmaPal.git
+cd PharmaPal

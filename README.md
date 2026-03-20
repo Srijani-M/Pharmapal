@@ -1,154 +1,114 @@
 # PharmaPal - AI-Powered Healthcare Assistant
 
-A prescription management system with AI-powered medical assistance and medication reminders.
+**PharmaPal** is a comprehensive prescription management system with AI-powered medical assistance and automated medication reminders. It is designed to help users stay on top of their healthcare routines with ease and security.
 
 ---
 
 ## Features
 
 ### User Authentication
-- Secure login and registration
-- Password validation (uppercase, lowercase, numbers, special characters)
-- Session management
+* **Secure Access:** Robust login and registration system.
+* **Password Validation:** Enforced security rules (uppercase, lowercase, numbers, and special characters).
+* **Session Management:** Keeps your data private and secure.
 
 ### Prescription Management
-- Upload prescriptions (PDF, PNG, JPG)
-- Store medicine name, dosage, and RX number
-- Track remaining refills
-- Set expiry dates
-- View and download stored prescriptions
+* **Multi-format Uploads:** Support for PDF, PNG, and JPG files.
+* **Data Tracking:** Store medicine names, dosages, and RX numbers.
+* **Tracking:** Monitor remaining refills and set expiration dates.
+* **Management:** View and download your stored prescriptions anytime.
 
 ### Medicine Reminders
-- Set daily reminders for medications
-- Custom time selection (AM/PM format)
-- Email notifications at reminder times
+* **Daily Alerts:** Set recurring reminders for your medications.
+* **Custom Scheduling:** Select specific times using a user-friendly AM/PM format.
+* **Email Notifications:** Receive alerts directly in your inbox at reminder times.
 
 ### AI Medical Assistant
-- Powered by Google Gemini AI
-- Answers medical and pharmaceutical questions
-- Provides information about medicines, symptoms, and treatments
-- Includes a disclaimer for medical advice
-
-### Email Notifications
-- Medicine reminder emails
-- Basic alerting system for medication tracking
-- Gmail SMTP integration
+* **Powered by Google Gemini AI:** Advanced AI integration for pharmaceutical questions.
+* **Contextual Info:** Get details on symptoms, medicines, and treatments.
+* **Safety First:** Includes a built-in disclaimer for medical advice.
 
 ### Dashboard
-- Overview of prescriptions
-- Active reminders count
-- Quick access to core features
+* **At-a-glance Overview:** See your stored prescriptions and active reminders count.
+* **Quick Access:** Navigate easily to core system features.
 
 ---
 
-## Project Structure
+## 🛠 Tech Stack
 
+* **Language:** Python 3.8+
+* **Frontend/UI:** Streamlit
+* **AI Model:** Google Gemini AI
+* **Database:** SQLite
+* **Communication:** SMTP (Gmail Integration)
+* **Cloud Hosting:** Google Cloud Platform (GCP)
+
+---
+
+## 📁 Project Structure
+
+```text
 Pharmapal/
-│
-├── app.py
-├── requirements.txt
-├── .env
-├── .gitignore
-├── README.md
-├── prescription_storage/
-└── logs/
+├── app.py                 # Main application script
+├── requirements.txt       # List of dependencies
+├── .env                   # Environment variables (Internal)
+├── .gitignore             # Files to exclude from Git
+├── README.md              # Project documentation
+├── prescription_storage/  # Folder for uploaded documents
+└── logs/                  # System activity logs
 
----
+Quick Start
+1. Clone the Repository
+git clone [https://github.com/Srijani-M/PharmaPal.git](https://github.com/Srijani-M/PharmaPal.git)
+cd PharmaPal
 
-## Quick Start
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/Srijani-M/Pharmapal.git
-cd Pharmapal
-
-### 2. Create Virtual Environment
-python -m venv venv
-
+2. Create a Virtual Environment
 # Windows
+python -m venv venv
 venv\Scripts\activate
 
 # Mac/Linux
 source venv/bin/activate
 
-### 3. Install Dependencies
-
+3. Install Dependencies
 pip install -r requirements.txt
 
-### 4. Set Up Environment Variables
-Create a .env file (do not commit this file):
+4. Set Up Environment Variables
+Create a .env file in the root directory and add your credentials:
 GOOGLE_API_KEY=your_gemini_api_key_here
 SENDER_EMAIL=your_email@gmail.com
 SENDER_PASSWORD=your_app_password_here
 
-### 5. Run the Application
-
+5. Run the Application
 streamlit run app.py
+Your app should now be running at: http://localhost:8501
 
+How To Use
+Register/Login: Create a secure account to start managing your health.
 
-Application runs at: http://localhost:8501
+Upload Prescriptions: Enter medicine details and upload a file for digital record-keeping.
 
-Tech Stack
-Python 3.8+
+Set Reminders: Choose your medicine and preferred time to receive email alerts.
 
-Streamlit
+Ask the AI: Use the AI Assistant tab for quick answers to medical queries.
 
-Google Gemini AI
+Contributing
+Contributions are welcome! If you have suggestions for improvements or want to add new features, feel free to:
 
-SQLite
+Fork the repository.
 
-SMTP
+Create a new Branch (git checkout -b feature/NewFeature).
 
-Google Cloud Platform (GCP)
+Commit your changes (git commit -m 'Add some NewFeature').
 
-How to Use
-1. Register/Login
-Create an account with a secure password.
+Push to the Branch (git push origin feature/NewFeature).
 
-2. Upload Prescriptions
-Enter medicine details
-
-Upload prescription file
-
-Store and manage records
-
-3. Set Medicine Reminders
-Choose medicine
-
-Select reminder time
-
-Receive email notifications
-
-4. Use AI Assistant
-Ask medical-related questions
-
-Get informational responses
-
-Not a substitute for professional advice
-
-5. Dashboard
-View stored prescriptions
-
-Monitor reminders
-
-Important Disclaimer
-Not a substitute for professional medical advice
-
-Always consult healthcare professionals
-
-AI responses are informational only
-
-Planned Features
-SMS reminders
-
-Automated refill alerts
-
-Medication interaction checker
-
-Mobile app version
+Open a Pull Request.
 
 License
-MIT License
+Distributed under the MIT License. This allows others to use and modify your code freely as long as they credit you.
 
-Made with ❤️ for better healthcare management
+Disclaimer
+PharmaPal is an informational tool. The AI Assistant provides general information and is not a substitute for professional medical advice, diagnosis, or treatment.
+
+Developed by Srijani M
+

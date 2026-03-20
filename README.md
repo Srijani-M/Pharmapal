@@ -33,7 +33,7 @@
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Language:** Python 3.8+
 * **Frontend/UI:** Streamlit
@@ -55,60 +55,4 @@ Pharmapal/
 ├── README.md              # Project documentation
 ├── prescription_storage/  # Folder for uploaded documents
 └── logs/                  # System activity logs
-
-Quick Start
-1. Clone the Repository
-git clone [https://github.com/Srijani-M/PharmaPal.git](https://github.com/Srijani-M/PharmaPal.git)
-cd PharmaPal
-
-2. Create a Virtual Environment
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Mac/Linux
-source venv/bin/activate
-
-3. Install Dependencies
-pip install -r requirements.txt
-
-4. Set Up Environment Variables
-Create a .env file in the root directory and add your credentials:
-GOOGLE_API_KEY=your_gemini_api_key_here
-SENDER_EMAIL=your_email@gmail.com
-SENDER_PASSWORD=your_app_password_here
-
-5. Run the Application
-streamlit run app.py
-Your app should now be running at: http://localhost:8501
-
-How To Use
-Register/Login: Create a secure account to start managing your health.
-
-Upload Prescriptions: Enter medicine details and upload a file for digital record-keeping.
-
-Set Reminders: Choose your medicine and preferred time to receive email alerts.
-
-Ask the AI: Use the AI Assistant tab for quick answers to medical queries.
-
-Contributing
-Contributions are welcome! If you have suggestions for improvements or want to add new features, feel free to:
-
-Fork the repository.
-
-Create a new Branch (git checkout -b feature/NewFeature).
-
-Commit your changes (git commit -m 'Add some NewFeature').
-
-Push to the Branch (git push origin feature/NewFeature).
-
-Open a Pull Request.
-
-License
-Distributed under the MIT License. This allows others to use and modify your code freely as long as they credit you.
-
-Disclaimer
-PharmaPal is an informational tool. The AI Assistant provides general information and is not a substitute for professional medical advice, diagnosis, or treatment.
-
-Developed by Srijani M
 
